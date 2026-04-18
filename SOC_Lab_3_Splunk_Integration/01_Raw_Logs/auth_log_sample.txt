@@ -1,0 +1,50 @@
+2026-04-17T21:44:45.793834-05:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-04-17T21:45:01.450648-05:00 Ubuntu CRON[13479]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-17T21:45:01.466364-05:00 Ubuntu CRON[13479]: pam_unix(cron:session): session closed for user root
+2026-04-17T21:45:45.954171-05:00 Ubuntu unix_chkpwd[13536]: password check failed for user (testuser)
+2026-04-17T21:45:45.965594-05:00 Ubuntu su: pam_unix(su:auth): authentication failure; logname=vboxuser uid=1000 euid=0 tty=/dev/pts/0 ruser=vboxuser rhost=  user=testuser
+2026-04-17T21:45:48.420443-05:00 Ubuntu su[13527]: FAILED SU (to testuser) vboxuser on pts/0
+2026-04-17T21:46:34.720713-05:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-04-17T21:46:34.721786-05:00 Ubuntu sudo: vboxuser : TTY=/dev/pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/passwd testuser
+2026-04-17T21:47:14.582030-05:00 Ubuntu passwd[13677]: pam_unix(passwd:chauthtok): password changed for testuser
+2026-04-17T21:47:14.582926-05:00 Ubuntu passwd[13677]: gkr-pam: couldn't update the login keyring password: no old password was entered
+2026-04-17T21:47:14.586069-05:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-04-17T21:49:00.222328-05:00 Ubuntu su[13889]: (to testuser) vboxuser on pts/0
+2026-04-17T21:49:00.246028-05:00 Ubuntu su[13889]: pam_unix(su:session): session opened for user testuser(uid=1002) by vboxuser(uid=1000)
+2026-04-17T21:49:00.262365-05:00 Ubuntu systemd-logind[1007]: Existing logind session ID 3 used by new audit session, ignoring.
+2026-04-17T21:49:00.411084-05:00 Ubuntu systemd-logind[1007]: New session c2 of user testuser.
+2026-04-17T21:49:00.646803-05:00 Ubuntu (systemd): pam_unix(systemd-user:session): session opened for user testuser(uid=1002) by testuser(uid=0)
+2026-04-17T21:49:00.658214-05:00 Ubuntu systemd-logind[1007]: New session 12 of user testuser.
+2026-04-17T21:49:20.372874-05:00 Ubuntu su[14296]: (to vboxuser) testuser on pts/0
+2026-04-17T21:49:20.384472-05:00 Ubuntu su[14296]: pam_unix(su:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=1002)
+2026-04-17T21:49:25.780581-05:00 Ubuntu unix_chkpwd[14319]: password check failed for user (testuser)
+2026-04-17T21:49:25.841389-05:00 Ubuntu su: pam_unix(su:auth): authentication failure; logname=vboxuser uid=1000 euid=0 tty=/dev/pts/0 ruser=vboxuser rhost=  user=testuser
+2026-04-17T21:49:27.695544-05:00 Ubuntu su[14317]: FAILED SU (to testuser) vboxuser on pts/0
+2026-04-17T21:50:19.338756-05:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-04-17T21:50:19.339797-05:00 Ubuntu sudo: vboxuser : TTY=/dev/pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/var/log/auth.log 
+2026-04-17T21:50:21.345075-05:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-04-17T21:51:03.355403-05:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-04-17T21:51:03.366647-05:00 Ubuntu sudo: vboxuser : TTY=/dev/pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/var/log/auth.log 
+2026-04-17T21:51:05.363534-05:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-04-17T21:51:54.296331-05:00 Ubuntu su[14296]: pam_unix(su:session): session closed for user vboxuser
+2026-04-17T21:52:02.628071-05:00 Ubuntu su[13889]: pam_unix(su:session): session closed for user testuser
+2026-04-17T21:52:02.670426-05:00 Ubuntu systemd-logind[1007]: Session c2 logged out. Waiting for processes to exit.
+2026-04-17T21:52:02.673045-05:00 Ubuntu systemd-logind[1007]: Removed session c2.
+2026-04-17T21:52:13.248114-05:00 Ubuntu systemd-logind[1007]: Removed session 12.
+2026-04-17T21:52:46.626402-05:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-04-17T21:52:46.626888-05:00 Ubuntu sudo: vboxuser : TTY=/dev/pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/tail -n 20 /var/log/auth.log
+2026-04-17T21:52:46.678194-05:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-04-17T21:55:01.541672-05:00 Ubuntu CRON[14762]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-17T21:55:01.601376-05:00 Ubuntu CRON[14762]: pam_unix(cron:session): session closed for user root
+2026-04-17T21:56:59.470033-05:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-04-17T21:56:59.471797-05:00 Ubuntu sudo: vboxuser : TTY=/dev/pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/grep Failed password /var/log/auth.log
+2026-04-17T21:56:59.489544-05:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-04-17T22:02:12.104799-05:00 Ubuntu gdm-password]: gkr-pam: unlocked login keyring
+2026-04-17T22:05:02.017459-05:00 Ubuntu CRON[15581]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-17T22:05:02.038553-05:00 Ubuntu CRON[15581]: pam_unix(cron:session): session closed for user root
+2026-04-17T22:08:01.721659-05:00 Ubuntu gdm-password]: gkr-pam: unlocked login keyring
+2026-04-17T22:08:21.587372-05:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-04-17T22:08:21.606722-05:00 Ubuntu sudo: vboxuser : TTY=/dev/pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+2026-04-17T22:08:21.616469-05:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-04-17T22:10:41.043279-05:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-04-17T22:10:41.045151-05:00 Ubuntu sudo: vboxuser : TTY=/dev/pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
