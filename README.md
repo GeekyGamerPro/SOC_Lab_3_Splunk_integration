@@ -45,7 +45,7 @@ Successfully reinitializing the admin account
 Login access was restored:
 
 Username: admin
-Password: Password123!
+Password: ****
 📊 Outcome
 Splunk web interface successfully loaded at http://localhost:8000
 Admin access restored
